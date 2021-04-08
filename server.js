@@ -10,7 +10,7 @@ app.get("/", (req, res) => {
   res.send("Inicio de tudo <br> <a href='/socket'>Ir para socket</a>");
 });
 
-io.on("connection", (socket) => {
+io.on("connection", () => {
   console.log("a user connected");
 });
 
